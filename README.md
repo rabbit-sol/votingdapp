@@ -8,7 +8,7 @@
 <ol>
 <li>Start up Ganache and open a workspace. change port to 8545.</li>
 <li>Log in to MetaMask</li>
-<li>Connect to  Server URL: http://localhost:7545/ and connect in metamask.</li>
+<li>Connect metamask to ganache port 8545.</li>
 <li>Copy the <em>private key</em> for the <strong>first</strong> account on Ganache by clicking the <em>key</em> icon</li>
 <li>Import Account on MetaMask:
 <ul>
