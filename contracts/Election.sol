@@ -19,8 +19,9 @@ contract Election {
 	
 	 	//Constructor 
 	constructor() public { 
-		addCandidate("Candidate 1");
-		addCandidate("Candidate 2");
+		addCandidate("BJP");
+		addCandidate("CONGRESS");
+		addCandidate("INDEPENDENT");
 	}
 	
 	 // Add candidate
