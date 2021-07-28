@@ -109,6 +109,7 @@
         <br/>
         <div id="loader">
           <p class="text-center">Loading...</p>
+          <p class="text-center">If taken more than 5sec, refresh the page <a href="#"> <buttonon onClick="refreshPage()">here.</button> </a></p>
         </div>
         <div id="content" style="display: none;">
           <table class="table">
@@ -189,7 +190,11 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
 
-
+    <script>
+      function refreshPage(){
+          window.location.reload();
+      } 
+      </script>
   <!-- Template Main JS File -->
  
 
