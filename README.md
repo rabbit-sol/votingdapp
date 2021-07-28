@@ -25,8 +25,7 @@
     <li>Extract the file and open folder in visual studio code.</li>
     <li>Open terminal and run following command.</li>
     </ul>
-<div class="snippet-clipboard-content position-relative"><code>
-npm install -g truffle
+<div class="snippet-clipboard-content position-relative"><pre style="position: relative;"><code>npm install -g truffle@5.0.2
 npm install
 truffle migrate --reset
 npm run dev
