@@ -6,9 +6,9 @@
 <li><a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" rel="nofollow">MetaMask</a> extension for Chrome</li>
 <li>Connect MetaMask to Ganache:
 <ol>
-<li>Start up Ganache and open a workspace</li>
+<li>Start up Ganache and open a workspace. change port to 8545.</li>
 <li>Log in to MetaMask</li>
-<li>Create a new <code>Custom RPC</code> with the <strong>Ganache RPC Server</strong> URL: <code>http://localhost:7545/</code> and connect</li>
+<li>Connect to  Server URL: http://localhost:7545/ and connect in metamask.</li>
 <li>Copy the <em>private key</em> for the <strong>first</strong> account on Ganache by clicking the <em>key</em> icon</li>
 <li>Import Account on MetaMask:
 <ul>
@@ -21,11 +21,11 @@
 </ul>
 <h2><a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Deployment</h2>
 <ul>
-<li>Fork this repo</li>
+<li>Fork this repo. Or just download it.</li>
 </ul>
-<div class="snippet-clipboard-content position-relative"><pre style="position: relative;"><code>git clone https://github.com/your-username/eth-vote
-cd eth-vote
-npm install -g truffle@5.0.2
+<div class="snippet-clipboard-content position-relative"><pre style="position: relative;"><code>git clone https://github.com/whiterabbit-hub/votingdapp.git
+cd votingdapp
+npm install -g truffle
 npm install
 truffle migrate --reset
 npm run dev
