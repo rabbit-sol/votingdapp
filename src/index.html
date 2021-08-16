@@ -50,13 +50,14 @@
         <!-- <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
+      
+
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" target="_blank" href="https://github.com/whiterabbit-hub/votingdapp">Documentation</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -119,19 +120,19 @@
           <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
             <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
               <i class="ri-body-scan-line"></i>
-              <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+              <h4 class="d-none d-lg-block">NO CENTRAL CONTROL</h4>
             </a>
           </li>
           <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
             <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
               <i class="ri-sun-line"></i>
-              <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+              <h4 class="d-none d-lg-block">VOTER PRIVACY (ANONYMOUS)</h4>
             </a>
           </li>
           <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
             <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
               <i class="ri-store-line"></i>
-              <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
+              <h4 class="d-none d-lg-block">Open Source Code</h4>
             </a>
           </li>
         </ul>
@@ -144,15 +145,10 @@
     <!-- <section id="cta" class="cta">
       <div class="container">
 
-        <div class="row" data-aos="zoom-out">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Start Vote</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="castvote.html">Call To Action</a>
-          </div>
-        </div>
+        <form onSubmit="App.addCandidate(); return false;">
+          <input type="text">
+          <button type="submit">Add Candidate</button>
+          </form>
 
       </div>
     </section> -->
@@ -166,15 +162,15 @@
 
         <div class="section-title" data-aos="zoom-out">
           <h2>About</h2>
-          <p>Who we are</p>
+          <p>Decentralized Voting Dapp</p>
         </div>
 
         <div class="row content" data-aos="fade-up">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+              The blockchain with the smart contracts, emerges as a good candidate to use in developments of safer, cheaper, more secure, more transparent, and easier-to-use e-voting systems.
+            </p> 
+           
             <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
               <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
@@ -183,9 +179,9 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              In this project, we have implemented and tested an e-voting application as a smart contract for the Ethereum network using the Ethereum and the Solidity language.
+
+
             </p>
           </div>
         </div>
@@ -230,7 +226,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="img/team/team-2.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -239,8 +235,12 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Kapil Kathait</h4>
+               
+                <h4>Email:</h4>
+                <span>Kapilkathait75@gmail.com</span>
+                <h4>Call:</h4>
+                <span>+917300665412</span>
               </div>
             </div>
           </div>
@@ -248,7 +248,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="img/team/team-3.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -257,8 +257,14 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <div class="member-info">
+                  <h4>Shivom Bhatt</h4>
+                 
+                  <h4>Email:</h4>
+                  <span>shivombhatt28@gmail.com</span>
+                  <h4>Call:</h4>
+                  <span>+919627135903</span>
+                </div>
               </div>
             </div>
           </div>
@@ -266,7 +272,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="img/team/team-4.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -275,8 +281,12 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Ritesh Kumar</h4>
+                 
+                  <h4>Email:</h4>
+                  <span>shivombhatt28@gmail.com</span>
+                  <h4>Call:</h4>
+                  <span>+919627135903</span>
               </div>
             </div>
           </div>
@@ -292,7 +302,7 @@
 
         <div class="section-title" data-aos="zoom-out">
           <h2>Contact</h2>
-          <p>Contact Us</p>
+          <p>Address</p>
         </div>
 
         <div class="row mt-0">
@@ -302,19 +312,22 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>GBPIET, Ghurdauri, Pauri Garhwal</p>
+                <p>Govind Ballabh Pant Institute of Engineering & Technology
+                  Ghurdauri, Pauri Garhwal, Uttarakhand
+                  Pin- 246194 <br>
+                  Fax: 01368- 228062</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>principalgbpecpauri@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+91 9589 55488 55</p>
+                <p>01368-228048</p>
               </div>
 
             </div>
@@ -348,7 +361,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
-        Designed by <a href="https://getbootstrap.com/">Bootstrap</a>
+        Designed on <a href="https://getbootstrap.com/">Bootstrap</a>
       </div>
     </div>
   </footer><!-- End Footer -->
