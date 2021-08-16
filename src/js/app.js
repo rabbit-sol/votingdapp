@@ -15,7 +15,7 @@ App = {
       web3 = new Web3(web3.currentProvider);
     } else {
       // Specify default instance if no web3 instance provided
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
       web3 = new Web3(App.web3Provider);
     }
     return App.initContract();
@@ -44,7 +44,7 @@ App = {
     web3.eth.getCoinbase(function(err, account) {
       if (err === null) {
         App.account = account;
-        $("#accountAddress").html("Your Account: " + account);
+        $("#accountAddress").html("Your Account: " + account+" is eligible for vote.");
       }
     });
  
@@ -78,7 +78,13 @@ App = {
     }).then(function(hasVoted) {
       // Do not allow a user to vote
       if (hasVoted) {
-        $('form').hide();
+          $('form').hide();
+        web3.eth.getCoinbase(function(err, account) {
+          if (err === null) {
+            App.account = account;
+            $("#accountAddress").html("Your Account: " + account+ " successfully voted");
+          }
+        });
       }
       loader.hide();
       content.show();
